@@ -1,7 +1,13 @@
 import { createClient } from '@supabase/supabase-js'
 
-const SUPABASE_URL = "https://bdvyohjudxyvahicqxsj.supabase.co"
-const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJkdnlvaGp1ZHh5dmFoaWNxeHNqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTg3MDQwNzEsImV4cCI6MjA3NDI4MDA3MX0.71tPP2gE8qgTrbE9yDdDhBACQQejSQi1N68idoeeJ7A"
+const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL
+const SUPABASE_ANON_KEY = import.meta.env.VITE_SUPABASE_ANON_KEY
+
+if (!SUPABASE_URL || !SUPABASE_ANON_KEY) {
+  throw new Error(
+    'Missing Supabase configuration. Set VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY in .env.'
+  )
+}
 
 // Main client – used by the app for the logged‑in tourist
 export const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY)
@@ -13,4 +19,3 @@ export const supabaseGroupsAuth = createClient(SUPABASE_URL, SUPABASE_ANON_KEY, 
     storageKey: 'supabase-auth-token-groups-helper'
   }
 })
-
