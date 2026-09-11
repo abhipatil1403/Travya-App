@@ -1,0 +1,21 @@
+test_distance_is_geographical (test_geofencing.GeofencingTests.test_distance_is_geographical) ... ok
+test_exact_boundary_is_inside (test_geofencing.GeofencingTests.test_exact_boundary_is_inside) ... ok
+test_inside_danger (test_geofencing.GeofencingTests.test_inside_danger) ... ok
+test_inside_safe (test_geofencing.GeofencingTests.test_inside_safe) ... ok
+test_inside_warning (test_geofencing.GeofencingTests.test_inside_warning) ... ok
+test_invalid_latitude_rejected (test_geofencing.GeofencingTests.test_invalid_latitude_rejected) ... ok
+test_invalid_longitude_rejected (test_geofencing.GeofencingTests.test_invalid_longitude_rejected) ... ok
+test_missing_latitude_rejected (test_geofencing.GeofencingTests.test_missing_latitude_rejected) ... ok
+test_missing_longitude_rejected (test_geofencing.GeofencingTests.test_missing_longitude_rejected) ... ok
+test_near_boundary_is_inside (test_geofencing.GeofencingTests.test_near_boundary_is_inside) ... ok
+test_non_numeric_rejected (test_geofencing.GeofencingTests.test_non_numeric_rejected) ... ok
+test_null_like_nan_rejected (test_geofencing.GeofencingTests.test_null_like_nan_rejected) ... ok
+test_outside_all_geofences (test_geofencing.GeofencingTests.test_outside_all_geofences) ... ok
+test_overlap_uses_highest_risk (test_geofencing.GeofencingTests.test_overlap_uses_highest_risk) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.003s
+
+OK
+
+executed=14; successful=True

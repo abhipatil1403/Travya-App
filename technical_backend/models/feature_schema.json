@@ -1,0 +1,12 @@
+{
+  "feature_order": [
+    "distance_time_ratio",
+    "avg_speed",
+    "route_deviation_percent",
+    "total_idle_minutes",
+    "fare_distance_ratio",
+    "itinerary_deviation_km",
+    "transport_mode_mismatch",
+    "schedule_delay_minutes"
+  ]
+}

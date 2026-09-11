@@ -1,0 +1,7 @@
+{
+  "strategy": "training_score_minmax_clip",
+  "training_score_min": -0.17083236558278797,
+  "training_score_max": 0.2030456383926913,
+  "sample_count": 162,
+  "source_split": "train_only"
+}

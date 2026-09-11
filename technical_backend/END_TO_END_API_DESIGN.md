@@ -1,0 +1,7 @@
+# End-to-end risk-assessment API
+
+`POST /api/v1/risk-assessment` accepts `events` (at least two objects) and `current_latitude`/`current_longitude`. Every event has: `trajectory_id` (string), `event_index` (integer >=0), `timestamp_minutes`, `latitude`, `longitude`, `planned_latitude`, `planned_longitude`, `actual_mode`, `planned_mode`, `segment_distance_km`, `idle_minutes`, `fare_amount`, and `scheduled_arrival_minutes`. Numeric nonnegative requirements apply to time, distance, idle, fare and schedule; coordinate bounds and ordering are additionally validated by the authoritative feature extractor.
+
+The request flows through existing feature extraction, validation-selected model/scaler and selected threshold, train-only score normalizer, geofence evaluation, risk fusion, and Safety Score. It returns `features`; `anomaly_detection` (`anomaly_score`, status, `ml_risk`, threshold); `geofencing`; `risk_assessment` (final risk, level, formula/version, contributions); `safety_assessment`; and structured component explanations.
+
+Pydantic rejects malformed schemas; component validation returns 422; unavailable required artifacts return 503; unexpected integration failure returns 500, with no fallback value. `GET /health` stays available and `GET /api/v1/status` reports only artifact/config availability. Determinism depends on fixed model artifacts, configuration, feature order, and identical input. All data and geofence limitations remain controlled-prototype limitations; no real-world safety inference is supported.

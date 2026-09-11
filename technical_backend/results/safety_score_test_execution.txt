@@ -1,0 +1,23 @@
+test_above_one_rejected (test_safety_score.SafetyScoreTests.test_above_one_rejected) ... ok
+test_above_safe_boundary (test_safety_score.SafetyScoreTests.test_above_safe_boundary) ... ok
+test_below_safe_boundary (test_safety_score.SafetyScoreTests.test_below_safe_boundary) ... ok
+test_bounds (test_safety_score.SafetyScoreTests.test_bounds) ... ok
+test_deterministic (test_safety_score.SafetyScoreTests.test_deterministic) ... ok
+test_exact_safe_boundary (test_safety_score.SafetyScoreTests.test_exact_safe_boundary) ... ok
+test_full_risk (test_safety_score.SafetyScoreTests.test_full_risk) ... ok
+test_high_risk (test_safety_score.SafetyScoreTests.test_high_risk) ... ok
+test_infinity_rejected (test_safety_score.SafetyScoreTests.test_infinity_rejected) ... ok
+test_low_risk (test_safety_score.SafetyScoreTests.test_low_risk) ... ok
+test_medium_risk (test_safety_score.SafetyScoreTests.test_medium_risk) ... ok
+test_missing_rejected (test_safety_score.SafetyScoreTests.test_missing_rejected) ... ok
+test_monotonic (test_safety_score.SafetyScoreTests.test_monotonic) ... ok
+test_nan_rejected (test_safety_score.SafetyScoreTests.test_nan_rejected) ... ok
+test_negative_rejected (test_safety_score.SafetyScoreTests.test_negative_rejected) ... ok
+test_zero_risk (test_safety_score.SafetyScoreTests.test_zero_risk) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.001s
+
+OK
+
+executed=16; successful=True

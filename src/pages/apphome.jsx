@@ -39,10 +39,7 @@ export default function HomeScreen() {
     { message: 'Construction ahead. Expect delays on the main route.' },
   ]);
 
-  const safetyScore = 86;
-  const isInSafeZone = true;
-  const lat = 18.45487;
-  const lng = 73.863923;
+  const safetyScore = '—';
 
   const safetyFeatures = [
     {
@@ -118,7 +115,7 @@ export default function HomeScreen() {
         <div style={styles.card}>
           <div style={styles.cardHeader}>
             <span style={{ fontSize: 18 }}>📈</span>
-            <span style={styles.cardTitle}>Live Safety Index</span>
+            <span style={styles.cardTitle}>Safety Assessment</span>
           </div>
           <div style={styles.scoreValueWrap}>
             <span style={styles.scoreValue}>{safetyScore}</span>
@@ -126,42 +123,14 @@ export default function HomeScreen() {
           <div style={styles.chipsRow}>
             <div style={{ ...styles.chip, background: hexWithAlpha(theme.colors.success, 0.12) }}>
               <span style={{ marginRight: 6 }}>🛡️</span>
-              <span style={{ color: theme.colors.success }}>Safe Zone: {isInSafeZone ? 'Yes' : 'No'}</span>
+              <span style={{ color: theme.colors.success }}>Run an assessment from your dashboard</span>
             </div>
             <div style={{ ...styles.chip, background: hexWithAlpha(theme.colors.primary, 0.12) }}>
               <span style={{ marginRight: 6 }}>📍</span>
-              <span style={{ color: theme.colors.primary }}>GPS Active</span>
+              <span style={{ color: theme.colors.primary }}>No live assessment loaded</span>
             </div>
           </div>
-          <p style={styles.cardNote}>Calculated from your current location, time, and environment signals</p>
-        </div>
-
-        {/* Safe Zone Card */}
-        <div style={styles.safeZoneCard}>
-          <div style={styles.safeZoneHeader}>
-            <div style={styles.safeZoneIcon}>✅</div>
-            <div>
-              <div style={styles.safeZoneTitle}>Safe Zone</div>
-              <div style={styles.safeZoneSubtitle}>You are in a safe area</div>
-            </div>
-          </div>
-          <div style={styles.safeZoneBody}>
-            <div style={styles.locationCol}>
-              <div style={styles.locationLabel}>Latitude</div>
-              <div style={styles.locationValue}>{lat.toFixed(6)}°</div>
-            </div>
-            <div style={styles.locationCol}>
-              <div style={styles.locationLabel}>Longitude</div>
-              <div style={styles.locationValue}>{lng.toFixed(6)}°</div>
-            </div>
-          </div>
-          <div style={styles.safeZoneFooter}>
-            <div style={styles.accuracy}>±30m accuracy</div>
-            <div style={{ display: 'flex', gap: 10 }}>
-              <button style={styles.detailBtn} onClick={() => window.alert('Details: Coming soon')}>👁️ Show Details</button>
-              <button style={styles.copyBtn} onClick={() => navigator.clipboard.writeText(`${lat}, ${lng}`)}>📋 Copy</button>
-            </div>
-          </div>
+          <p style={styles.cardNote}>Scores are shown only after a backend assessment response.</p>
         </div>
 
         {/* Emergency Button */}
@@ -175,8 +144,8 @@ export default function HomeScreen() {
                   id: 'SOS-' + Date.now(),
                   name: 'You',
                   phone: '+91 xxxxxxxx',
-                  lat,
-                  lng,
+                  lat: null,
+                  lng: null,
                   ts: Date.now(),
                 };
                 const next = [...list, ev];

@@ -1,0 +1,18 @@
+{
+  "confusion_matrix": [
+    [
+      42,
+      0
+    ],
+    [
+      29,
+      16
+    ]
+  ],
+  "precision": 1.0,
+  "recall": 0.35555555555555557,
+  "f1_score": 0.5245901639344263,
+  "false_positive_rate": 0.0,
+  "false_negative_rate": 0.6444444444444445,
+  "roc_auc": 0.9894179894179893
+}

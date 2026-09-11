@@ -1,0 +1,11 @@
+test_controlled_cases_response_schema_and_determinism (test_end_to_end_api.EndToEndApiTests.test_controlled_cases_response_schema_and_determinism) ... ok
+test_health_and_status (test_end_to_end_api.EndToEndApiTests.test_health_and_status) ... ok
+test_invalid_request_inputs (test_end_to_end_api.EndToEndApiTests.test_invalid_request_inputs) ... ok
+test_missing_model_and_normalizer_return_service_error (test_end_to_end_api.EndToEndApiTests.test_missing_model_and_normalizer_return_service_error) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 1.922s
+
+OK
+
+executed=4; successful=True

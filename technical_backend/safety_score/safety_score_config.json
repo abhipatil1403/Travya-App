@@ -1,0 +1,9 @@
+{
+  "formula_version": "controlled-prototype-inverse-risk-v1",
+  "score_min": 0,
+  "score_max": 100,
+  "transformation": "safety_score = round(100 * (1 - final_risk), 1)",
+  "rounding_decimal_places": 1,
+  "category_thresholds": {"safe_minimum": 67.0, "caution_minimum": 34.0},
+  "parameter_status": "Controlled prototype parameters; not a validated real-world safety measurement."
+}

@@ -1,0 +1,22 @@
+{
+  "python": "3.11+",
+  "scikit_learn": "1.6.1",
+  "parameters": {
+    "n_estimators": 200,
+    "contamination": 0.15,
+    "max_samples": "auto",
+    "random_state": 20260911,
+    "n_jobs": 1
+  },
+  "feature_order": [
+    "distance_time_ratio",
+    "avg_speed",
+    "route_deviation_percent",
+    "total_idle_minutes",
+    "fare_distance_ratio",
+    "itinerary_deviation_km",
+    "transport_mode_mismatch",
+    "schedule_delay_minutes"
+  ],
+  "preprocessing": "StandardScaler fitted only on training split"
+}

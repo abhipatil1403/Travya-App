@@ -1,0 +1,7 @@
+{
+  "threshold": -0.14373467326538011,
+  "score_direction": "anomaly_score = -IsolationForest.decision_function; higher is more anomalous",
+  "decision_rule": "anomalous when anomaly_score >= threshold",
+  "selection_source": "Phase 5.5 executed validation-only maximum-F1 selection; held-out test set was not used for selection",
+  "formula_version": "controlled-prototype-linear-v1"
+}

@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import Navbar from './navbar'
 import { supabase } from '../lib/supabase'
 import { createGroup, getMyGroup, addMemberToGroup, removeMemberFromGroup } from '../lib/groups'
+import RiskAssessmentPanel from '../components/RiskAssessmentPanel'
 
 export default function TouristDashboard() {
   const navigate = useNavigate()
@@ -179,6 +180,8 @@ export default function TouristDashboard() {
               <p className="text-sm text-gray-600">Welcome, {user.email}</p>
             )}
           </div>
+
+          <RiskAssessmentPanel />
 
           {/* Family / Travel Group Section */}
           <div className="rounded-2xl bg-white/90 p-6 ring-1 ring-black/10 shadow">

@@ -1,0 +1,8 @@
+{
+  "formula_version": "controlled-prototype-linear-v1",
+  "ml_normalization": {"strategy": "training_score_minmax_clip", "artifact": "models/VALIDATION_SELECTED_THRESHOLD/ml_score_normalizer.json"},
+  "weights": {"ml": 0.6, "geofence": 0.4},
+  "interaction_weight": 0.0,
+  "risk_level_thresholds": {"medium": 0.34, "high": 0.67},
+  "parameter_status": "Controlled prototype configuration; not experimentally validated as an operational safety policy."
+}

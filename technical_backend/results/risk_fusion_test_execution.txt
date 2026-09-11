@@ -1,0 +1,23 @@
+test_above_boundary (test_risk_fusion.RiskFusionTests.test_above_boundary) ... ok
+test_below_boundary (test_risk_fusion.RiskFusionTests.test_below_boundary) ... ok
+test_deterministic (test_risk_fusion.RiskFusionTests.test_deterministic) ... ok
+test_exact_medium_boundary (test_risk_fusion.RiskFusionTests.test_exact_medium_boundary) ... ok
+test_high_ml_danger (test_risk_fusion.RiskFusionTests.test_high_ml_danger) ... ok
+test_high_ml_safe (test_risk_fusion.RiskFusionTests.test_high_ml_safe) ... ok
+test_invalid_geo_rejected (test_risk_fusion.RiskFusionTests.test_invalid_geo_rejected) ... ok
+test_invalid_ml_rejected (test_risk_fusion.RiskFusionTests.test_invalid_ml_rejected) ... ok
+test_invalid_weights_rejected (test_risk_fusion.RiskFusionTests.test_invalid_weights_rejected) ... ok
+test_low_ml_danger (test_risk_fusion.RiskFusionTests.test_low_ml_danger) ... ok
+test_low_ml_safe (test_risk_fusion.RiskFusionTests.test_low_ml_safe) ... ok
+test_medium_warning (test_risk_fusion.RiskFusionTests.test_medium_warning) ... ok
+test_missing_geofence_rejected (test_risk_fusion.RiskFusionTests.test_missing_geofence_rejected) ... ok
+test_missing_ml_rejected (test_risk_fusion.RiskFusionTests.test_missing_ml_rejected) ... ok
+test_output_in_range (test_risk_fusion.RiskFusionTests.test_output_in_range) ... ok
+test_training_minmax_normalization (test_risk_fusion.RiskFusionTests.test_training_minmax_normalization) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.001s
+
+OK
+
+executed=16; successful=True

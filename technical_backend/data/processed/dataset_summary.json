@@ -1,0 +1,19 @@
+{
+  "dataset_type": "Synthetic Controlled Evaluation Data",
+  "random_seed": 20260911,
+  "trajectories": 290,
+  "normal": 150,
+  "anomalous": 140,
+  "scenario_counts": {
+    "normal_tourist_movement": 150,
+    "high_speed_abnormal_movement": 20,
+    "large_route_deviation": 20,
+    "excessive_idle_duration": 20,
+    "fare_distance_inconsistency": 20,
+    "large_itinerary_deviation": 20,
+    "transport_mode_mismatch": 20,
+    "significant_schedule_delay": 20
+  },
+  "validation": "passed: no missing values, invalid coordinates, or negative distances/times",
+  "processed_sha256": "cc6dea12f28f7fecedca2116cbafed4b220803112aca94edfee3fec064516ae2"
+}

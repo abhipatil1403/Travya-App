@@ -1,0 +1,11 @@
+{
+  "configuration_type": "Controlled Prototype Geofences — not official or real-world safety zones",
+  "coordinate_format": "latitude/longitude decimal degrees (WGS-84 convention)",
+  "overlap_rule": "highest risk_value; then nearest center; then geofence_id",
+  "geofences": [
+    {"geofence_id": "prototype-safe-01", "name": "Prototype Safe Circle", "center_latitude": 12.9700, "center_longitude": 77.5900, "radius_meters": 400, "risk_zone": "SAFE", "risk_value": 0.0},
+    {"geofence_id": "prototype-warning-01", "name": "Prototype Warning Circle", "center_latitude": 12.9800, "center_longitude": 77.6100, "radius_meters": 400, "risk_zone": "WARNING", "risk_value": 0.5},
+    {"geofence_id": "prototype-warning-overlap-01", "name": "Prototype Overlap Warning Circle", "center_latitude": 12.9850, "center_longitude": 77.6150, "radius_meters": 1000, "risk_zone": "WARNING", "risk_value": 0.5},
+    {"geofence_id": "prototype-danger-01", "name": "Prototype Danger Circle", "center_latitude": 12.9900, "center_longitude": 77.6200, "radius_meters": 250, "risk_zone": "DANGER", "risk_value": 1.0}
+  ]
+}
